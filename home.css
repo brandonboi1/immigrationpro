@@ -91,7 +91,7 @@ nav img{
    margin-top: 3%;
 }
 
-.dropdown li{
+.nav-links ul li .dropdown li{
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -101,7 +101,7 @@ nav img{
     padding: 1%;
 }
 
-.dropdown-menu a {
+.nav-links ul li .dropdown-menu a {
     display: block;
     padding: 1%;
     text-decoration: none;
@@ -110,11 +110,11 @@ nav img{
     width: 100%;
 }
 
-.dropdown-menu.show {
+.nav-links ul li .dropdown-menu.show {
     display: block;
 }
 
-.dropdown-menu {
+.nav-links ul li .dropdown-menu {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s, visibility 0.3s;
