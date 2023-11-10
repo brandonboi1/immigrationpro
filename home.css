@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Lora', serif;
     font-family: 'PT Sans', sans-serif;
 }
@@ -8,6 +9,7 @@
 body{
   background: #f1f1f0;
   font-size: 15px;
+  overflow-x: hidden;
 }
 
 /*---------------------------------Header----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -52,7 +54,8 @@ nav img{
 .nav-links ul {
     list-style: none;
     display: flex;
-    margin-left: 52%;
+    margin-left: 58%;
+    margin-right: -20%;
 }
 
 .nav-links ul li{
@@ -128,8 +131,6 @@ nav img{
     margin-top: 2%;
 }
 
-
-
 .text-box{
     width: 80%;
     position: absolute;
@@ -170,46 +171,68 @@ nav img{
         font-size: 0.8em;
       }
 
-      .header .navs{
+    .navs{
+        width: 100%;
+        overflow: hidden;
+        max-width: 100%;
+        margin-right: -15%;
+
+        position: fixed;
+    }
+
+    nav {
+        padding: 0 0;
+    }
+
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+        overflow: hidden;
+    }
+
+    .header .navs{
         margin-right: 0px;
-      }
+    }
       
-      .nav-links{
+    .nav-links{
         position: fixed;
         background: #004aad;
         height: 100vh;
-        width: 100%;
+        width: 50%;
         top: 0;
-        right: -350px;
+        right: -5000px;
         text-align: left;
         z-index: 2;
         transition: 1s;
-      }
+        justify-content: left;
+    }
       
-      .navs i{
+    .navs i{
         display: block;
         color: #8fd8ff;
         cursor: pointer;
         font-size: 1.5em;
         margin: 2%;
         margin-bottom: 2%;
-      }
+    }
       
-      .nav-links ul{
+    .nav-links ul{
         padding: 2%;
-      }
+        overflow: hidden;
+    }
 
-      h1{
+    h1{
         font-size: 1em;
-      }
+    }
 
-      p{
+    p{
         font-size: 0.6em;
-      }
+    }
 
-      body{
+    body{
         max-width: 100%;
-      }
+    }
 
     .navs img{
         width: 100px;
@@ -226,8 +249,9 @@ nav img{
         font-size: 1em;
     }
 
-    .dropdown-menu {
+    .nav-links ul li .dropdown-menu {
         background-color: rgba(0, 0, 0, 0.8);
+        width: 50%;
     }
 
 }
@@ -1257,7 +1281,7 @@ nav img{
     border-radius: 30px;
     font-weight: bold;
     background-color: #ffffff;
-    width: 22%;
+    width: 25%;
     transition: 3s;
     
 }
