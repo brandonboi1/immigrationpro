@@ -42,7 +42,6 @@ nav img{
     text-align: right;
     margin-top: 0.5%
 }
-
 .navs {
     position: fixed;
     height: 2vh;
@@ -123,6 +122,7 @@ nav img{
     padding: 1%;
     margin-top: 2%;
 
+}
 
 .dropdown1{
     margin-top: 2%;
