@@ -42,6 +42,7 @@ nav img{
     text-align: right;
     margin-top: 0.5%
 }
+
 .navs {
     position: fixed;
     height: 2vh;
@@ -78,6 +79,10 @@ nav img{
     display: block;
     margin-top: 2%;
     transition: 0.5s;
+}
+
+.nav-links ul li:hover .dropdown-menu {
+    display: block;
 }
 
 .nav-links ul li:hover::after{
