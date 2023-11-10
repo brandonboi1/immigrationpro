@@ -73,34 +73,27 @@
             </script>
 
             <script>
-               document.addEventListener("DOMContentLoaded", function () {
-    var dropdowns = document.querySelectorAll('.dropdown');
+               document.addEventListener("DOMContentLoaded", function() {
+               var dropdowns = document.querySelectorAll('.dropdown');
 
-    dropdowns.forEach(function (dropdown) {
-        var dropdownToggle = dropdown.querySelector('a');
-        var dropdownMenu = dropdown.querySelector('.dropdown-menu');
+               dropdowns.forEach(function(dropdown) {
+               var dropdownToggle = dropdown.querySelector('a');
+               var dropdownMenu = dropdown.querySelector('.dropdown-menu');
+        
+               dropdownToggle.addEventListener('mouseenter', function() {
+               dropdownMenu.classList.add('show');
+               });
 
-        dropdownToggle.addEventListener('mouseenter', function () {
-            dropdownMenu.classList.add('show');
-        });
+               dropdownToggle.addEventListener('click', function(event) {
+               event.preventDefault();
+               dropdownMenu.classList.toggle('show');
+               });
 
-        dropdownToggle.addEventListener('click', function (event) {
-            event.preventDefault();
-            dropdownMenu.classList.toggle('show');
-        });
-
-        dropdown.addEventListener('mouseleave', function () {
-            dropdownMenu.classList.remove('show');
-        });
-
-        // Add an event listener to close the dropdown when clicking outside
-        document.addEventListener('click', function (event) {
-            if (!dropdown.contains(event.target)) {
-                dropdownMenu.classList.remove('show');
-            }
-        });
-    });
-});
+              dropdown.addEventListener('mouseleave', function() {
+              dropdownMenu.classList.remove('show');
+              });
+               });
+               });
             </script>
 
             <nav class="text-box">
