@@ -8,7 +8,6 @@
 body{
   background: #f1f1f0;
   font-size: 15px;
-  position: relative;
 }
 
 /*---------------------------------Header----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -25,14 +24,7 @@ nav{
     display: flex;
     padding: 2% 4%;
     justify-content: space-between;
-}
-
-.navs{
-    position: fixed;
-    height: 3%;
-    width: 100%;
-    margin-top: 1%;
-
+    align-items: center;
 }
 
 .scrolled {
@@ -48,15 +40,25 @@ nav img{
 .nav-links{
     flex: 1;
     text-align: right;
-    margin-top: 0.5%;
+    margin-top: 0.5%
+}
+.navs {
+    position: fixed;
+    height: 2vh;
+    width: 100%;
+    margin-top: 0%;
 }
 
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    margin-left: 52%;
+}
 
 .nav-links ul li{
-    list-style: none;
-    display: inline-block;
     padding: 0.5% 1%;
     position: relative;
+    margin: 0 1%;
    
 }
 
@@ -65,6 +67,7 @@ nav img{
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
+    position: relative;
 }
 
 .nav-links ul li::after{
@@ -80,27 +83,6 @@ nav img{
 .nav-links ul li:hover::after{
    width: 100%;
    margin-top: 3%;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: rgba(0,0,0,0.3);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    text-align: left;
-    font-size: 0.9em;
-    width: 160%;
-    height: fit-content;
-    align-items: center;
-    justify-content: left;
-    padding: 1%;
-    margin-top: 2%;
-
-}
-
-.dropdown1{
-    margin-top: 2%;
 }
 
 .dropdown li{
@@ -126,10 +108,32 @@ nav img{
     display: block;
 }
 
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    text-align: left;
+    font-size: 0.9em;
+    width: 160%;
+    align-items: center;
+    justify-content: left;
+    padding: 1%;
+    margin-top: 2%;
+
+}
+
+.dropdown1{
+    margin-top: 2%;
+}
+
+
+
 .text-box{
     width: 80%;
     position: absolute;
-    top: 50%;
+    top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -156,8 +160,8 @@ nav img{
 }
 
 .navs i{
-    display: none;
-  }
+    display: none; 
+}
 
 /*------------------------------------------------------------------------------------------------------header mediaquery----------------------------------------------------------------------------------------------------------------------------*/
 @media (max-width: 700px){
@@ -174,7 +178,7 @@ nav img{
         position: fixed;
         background: #004aad;
         height: 100vh;
-        width: 50%;
+        width: 100%;
         top: 0;
         right: -350px;
         text-align: left;
@@ -211,13 +215,6 @@ nav img{
         width: 100px;
     }
 
-    .navs{
-        max-width: 100%;
-        width: 90%;
-        margin-right: 0%;
-        overflow: hidden;
-        position: fixed;
-    }
 
 
     .text-box img{
@@ -232,18 +229,6 @@ nav img{
     .dropdown-menu {
         background-color: rgba(0, 0, 0, 0.8);
     }
-
-    .nav-links{
-        position: fixed;
-        background: #004aad;
-        height: 100vh;
-        width: 50%;
-        top: 0;
-        right: -350px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-      }
 
 }
 
@@ -743,8 +728,8 @@ nav img{
     font-weight: bold;
     color: #f1f1f0;
     font-size: 6.5em;
-    margin-left: 40%;
-    margin-top: 0.5%;
+    margin-left:36%;
+    margin-top: 1.5%;
     bottom: 0px;
     float: left;
 }
@@ -754,7 +739,7 @@ nav img{
 }
 
 .studyh1{
-    margin-left: 75%;
+    margin-left: 70%;
     font-size: 1.6em;
     color: #004aad;
     float: left;
@@ -898,12 +883,12 @@ nav img{
 }
 
 .visitbkg h1{
-    font-size: 3.9em;
+    font-size: 4.5em;
     margin-left: 5%;
     margin-right: 5%;
     width: 90%;
     font-weight: bold;
-    margin-top: 35%;
+    margin-top: 34%;
     float: inline-start;
     color: #f1f1f0;
 }
@@ -1015,8 +1000,8 @@ nav img{
 }
 
 .jobbkg h1{
-    font-size: 3em;
-    margin-left: 46%;
+    font-size: 3.5em;
+    margin-left: 47%;
     font-weight: bold;
     margin-top: 20%;
     float: inline-start;
@@ -1272,7 +1257,7 @@ nav img{
     border-radius: 30px;
     font-weight: bold;
     background-color: #ffffff;
-    width: 24%;
+    width: 22%;
     transition: 3s;
     
 }
@@ -1964,7 +1949,7 @@ nav img{
 .footerdrawing img{
     width: 25%;
     float: right;
-    margin-top: -24%;
+    margin-top: -18%;
     margin-right: 20%;
 }
 
@@ -1984,7 +1969,7 @@ nav img{
 
 .copyright{
     margin-top: 10%;
-    margin-left: 49.3%;
+    margin-left: 53.3%;
     margin-bottom: -1%;
     position: relative;
 }
