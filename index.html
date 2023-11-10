@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ImmigrationPRO</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <section class="header">
+            <nav class="navs">
+                <a href="#"><img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPRO/logo%20transparent.png" alt="Logo"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#">About</a>
+                            <ul class="dropdown-menu dropdown1">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Charity</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Pathways</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Pathways</a></li>
+                                <li><a href="#">Study Abroad</a></li>
+                                <li><a href="#">Employment Abroad</a></li>
+                                <li><a href="#">Move Abroad</a></li>
+                                <li><a href="#">Asylum Abroad</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <script>
+                // Toggle menu code
+               var navlinks = document.getElementById("navlinks");
+               
+               function showMenu() {
+                 navlinks.style.right = "0";
+               }
+               
+               function hideMenu() {
+                 navlinks.style.right = "-350px";
+               }
+            </script>
+            
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                var header = document.querySelector('.header');
+                var nav = document.querySelector('.navs');
+
+                window.addEventListener('scroll', function() {
+                var scrollPos = window.scrollY;
+
+                if (scrollPos > header.offsetHeight) {
+                nav.classList.add('scrolled');
+                } else {
+                nav.classList.remove('scrolled');
+                }
+                });  
+                  });
+            </script>
+
+            <script>
+               document.addEventListener("DOMContentLoaded", function() {
+               var dropdowns = document.querySelectorAll('.dropdown');
+
+               dropdowns.forEach(function(dropdown) {
+               var dropdownToggle = dropdown.querySelector('a');
+               var dropdownMenu = dropdown.querySelector('.dropdown-menu');
+        
+               dropdownToggle.addEventListener('mouseenter', function() {
+               dropdownMenu.classList.add('show');
+               });
+
+               dropdownToggle.addEventListener('click', function(event) {
+               event.preventDefault();
+               dropdownMenu.classList.toggle('show');
+               });
+
+              dropdown.addEventListener('mouseleave', function() {
+              dropdownMenu.classList.remove('show');
+              });
+               });
+               });
+            </script>
+
+            <nav class="text-box">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPRO/logo%20transparent.png" alt="ImmigrationPRO logo">
+                <div>
+                <p>Immigration Made Easy, Simple, Transparent, Affordable, and Accessible.<br>This is Where Dreams Take Flight.</p>
+              </div>
+            </nav>
+        </section>
+        <div style="clear:both;"></div>
+
+<!---------------------------------------------------------INTRO SECTION----------------------------------------------------------------------------------------------->
+        <section>
+            <div class="sec1row">
+            <div class="sec1col">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec1imgfam.png" alt="happy family">
+
+            </div>
+            <div class="sec1col words">
+                <h1>Transforming Dreams into <br>Reality</h1>
+                <p>At Immigration Pro, we are dedicated to transforming your dreams into reality. Our mission is to guide you through the immigration journey, ensuring it's a seamless and accessible process. With decades of experience, our team of experts is committed to providing clarity, simplicity, and transparency in every step. We don't just offer services; we provide solutions that validate your dreams. Our dedication to affordability, combined with personalized attention, sets us apart.
+                </p> <br>
+                <p>Our comprehensive services encompass visa applications, relocation assistance, career coaching, school applications, job-hunting techniques, resume revamping, IELTS tutoring, and much more. We tailor our solutions to your unique needs, backed by in-depth industry knowledge and government compliance. Every interaction with Immigration Pro is a step closer to your dream destination.
+                </p> <br>
+                <p>Take the first vital step today. Book a paid consultation with us for just $200. Our consultants offer personalized advice, clarify your doubts, and provide a clear roadmap to your immigration goals. It's an investment in your dreams, a chance to ensure that your journey is not just a dream but a reality. Together, let's embark on a path where aspirations become achievements.
+                </p>
+                <div class="cashbtn">
+                    <a href=""><p>Book a Paid consultation</p></a>
+                </div>
+                </div>
+                
+            </div>
+        </section>
+        <div style="clear:both;"></div>
+
+<!---------------------------------------------------------------DESTINATIONS------------------------------------------------------------------------->
+        <section class="section2">
+            <div class="sec2 words">
+                <h1>Travel Destinations</h1>
+            </div>
+            <div class="sec2row sec1row">
+                <div class="sec2col sec1col">
+                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec2drawing.png" alt="plane drawing">
+                </div>
+                <div class="sec2col sec1col sec2col2">
+                    <p>Explore Your World - From the vibrant cities of the USA to the picturesque landscapes of New Zealand, and the rich history of Europe to the vast wilderness of Canada and the stunning beauty of Australia. Discover the endless possibilities and diverse cultures these destinations offer. Where will your dreams take flight?
+                    </p><br>
+                    <p>Plus, we offer services for destinations across the globe, from South America to Asia, and Africa. We've got you covered wherever your dreams may lead you.</p>
+                </div>
+            </div>
+
+            <div class="destinations">
+                <div class="destination">
+                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec2usa.png" alt="New York USA">
+                    <h1>USA</h1>
+                </div>
+                <div class="destination">
+                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec2ca.png" alt="Toronto Canada">
+                    <h1>CANADA</h1>
+                </div>
+                <div class="destination">
+                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec2au.png" alt="Opera house Australia">
+                    <h1>AUSTRALIA</h1>
+                </div>
+                <div class="destination">
+                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec2nz.png" alt="Auckland New Zealand">
+                    <h1>NEW ZEALAND</h1>
+                </div>
+                <div class="destination">
+                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec2europe.png" alt="EU">
+                    <h1>EUROPE</h1>
+                </div>
+                
+            </div>
+        </section>
+        <div style="clear:both;"></div>
+
+<!---------------------------------------------------------what we offer----------------------------------------------------------------------------------------------------------------------------------------------->
+        <section class="whatweoffer">
+            <div class="sec2 words">
+                <h1>What We Offer</h1>
+            </div>
+            <div class="whatweofferrow">
+                <div class="whatweoffercol">
+                    <div class="service-list service1">
+                        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/listicn.png" alt="Plane Icon" class="bullet-icon">
+                        <div class="service-container">
+                            <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/visaicn.png" alt="Service Icon" class="service-icon">
+                            <h1 class="service-title">Visa Consultation and Application</h1>
+                            <p class="service-description">Unlock the doors to international opportunities with our comprehensive visa guidance and application support. We streamline the complex process, ensuring your journey abroad is smooth and hassle-free.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-list service2">
+                        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/listicn.png" alt="Plane Icon" class="bullet-icon">
+                        <div class="service-container">
+                            <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/briefcaseicn.png" alt="Service Icon" class="service-icon">
+                            <h1 class="service-title">Career Coaching</h1>
+                            <p class="service-description">Nail that dream job abroad with our personalized career coaching. We'll help you fine-tune your resume, master interviews, and equip you with the skills essential for success in your chosen field.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-list service3">
+                        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/listicn.png" alt="Plane Icon" class="bullet-icon">
+                        <div class="service-container">
+                            <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/schoolicn.png" alt="Service Icon" class="service-icon">
+                            <h1 class="service-title">School Hunting and Application</h1>
+                            <p class="service-description">For aspiring scholars, we simplify the process of finding the perfect educational institution abroad. Our experts guide you through every step, from selecting the right school to completing applications.</p>
+                        </div>
+                    </div>
+                    <div class="whatweofferdrawing1">
+                        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec3drawing2.png" alt="Plane drawing">
+                    </div>
+
+                </div>
+                <div class="whatweoffercol colimg">
+                    <div class="whatweofferdrawing2">
+                        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec3drawing1.png" alt="">
+                    </div>
+                    <div class="whatweofferimg">
+                        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec3img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="whatweoffersec2">
+            <div class="whatweofferrowsec2">
+                <div class="whatweoffercolsec2">
+                    <div class="whatweofferimgmain">
+                        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec4img.png" alt="">
+                    </div>
+                </div>
+                <div class="whatweoffercolsec2">
+                    <div class="whatweofferdrawing1sec2">
+                        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec4drawing1.png" alt="">
+                    </div>
+                    <div class="service-listsec2 service1sec2">
+                        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/listicn.png" alt="Plane Icon" class="bullet-iconsec2">
+                        <div class="service-containersec2">
+                            <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/jobhunticn.png" alt="Service Icon" class="service-iconsec2">
+                            <h1 class="service-titlesec2">Abroad Job Hunting Techniques</h1>
+                            <p class="service-descriptionsec2">Landing a job in a foreign land is no longer a challenge. Our job hunting techniques empower you with the strategies and insights needed to secure visa-sponsored positions.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-listsec2 service2sec2">
+                        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/listicn.png" alt="Plane Icon" class="bullet-iconsec2">
+                        <div class="service-containersec2">
+                            <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/briefcaseicn.png" alt="Service Icon" class="service-iconsec2">
+                            <h1 class="service-titlesec2">Interviewing and Resume Revamping</h1>
+                            <p class="service-descriptionsec2">Maximize your chances of success with our interview preparation and resume revamping. We fine-tune your CV and provide invaluable interview coaching, ensuring you stand out in the competitive job market.</p>
+                        </div>
+                    </div>
+
+                    <div class="service-listsec2 service3sec2">
+                        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/listicn.png" alt="Plane Icon" class="bullet-iconsec2">
+                        <div class="service-containersec2">
+                            <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/schoolicn.png" alt="Service Icon" class="service-iconsec2">
+                            <h1 class="service-titlesec2">IELTS and English Language Tutoring</h1>
+                            <p class="service-descriptionsec2">Master the English language and excel in exams like IELTS with our expert tutoring services. We offer comprehensive language support to help you reach your proficiency goals.</p>
+                        </div>
+                    </div>
+                    <div class="whatweofferdrawing2sec2">
+                        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec4drawing2.png" alt="Suitcase drawing">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div style="clear:both;"></div>
+
+<!---------------------------------------------------------------------Study abroad-------------------------------------------------------------------------------------------------------------------------------------->
+<section class="studyabroad">
+    <section class="studybkg">
+        <div>
+          <h1 class="studyh1">Unlock Your Global Potential</h1>
+        </div>
+        <div class="text-transition" id="country-text">
+            STUDY <br>IN <span id="country-name" class="country">USA</span>
+            </div>
+        </div>
+        <script>
+            const countries = ['USA', 'Germany', 'South Africa', 'Canada', 'Australia', 'New Zealand'];
+            let currentIndex = 0;
+            const countryText = document.getElementById('country-name');
+    
+            function changeCountry() {
+                countryText.style.opacity = 0;
+                setTimeout(() => {
+                    currentIndex = (currentIndex + 1) % countries.length;
+                    countryText.textContent = countries[currentIndex];
+                    countryText.style.opacity = 1;
+                }, 1000);
+            }
+
+            changeCountry();
+    
+            setInterval(changeCountry, 3000);
+        </script>
+    </section>
+    <section class="studyinfo">
+        <div class="studyrow">
+            <div class="studycol">
+                <h1 class="studyinfoh1">
+                    Study in Your Dream Destination
+                </h1>
+                <p>At Immigration Pro, we're your partners in turning your dream of studying abroad into reality. We understand that embarking on this educational journey is a life-changing experience, and we're here to make every step seamless. From assisting you in preparing your documents and meeting the requirements for various destinations to helping you find the perfect school from our extensive network of partner institutions worldwide, we're with you all the way. Our services include guiding you through the application process, ensuring you meet admission criteria, and even assisting with visa applications. Your educational adventure begins with us, and we ensure it's a smooth and successful one.</p>
+
+            </div>
+            <div class="studycol">
+                <h1 class="studyinfoh1">
+                    Your Dreams, Our Commitment
+                </h1>
+                <p>With our strong partnerships with renowned educational institutions worldwide, we offer you not only the guidance you need but also access to a world of opportunities. We understand that each student has unique dreams and ambitions, and we tailor our support to match your aspirations. Our commitment to your success is unwavering. Our experts provide comprehensive advice and solutions, ensuring you're well-informed and confident in your journey toward academic excellence. Ready to learn more? Hit the "Learn More" button to discover the wealth of possibilities waiting for you.</p>
+                <div class="studybtn">
+                    <a href="">
+                        <p>Learn More</p>
+                    </a>
+                </div>
+
+            </div>
+            <div class="studycol">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/Aditions/studygrads.png" alt="graduates celebrating">
+
+            </div>
+        </div>
+    </section>
+</section>
+<div style="clear:both;"></div>
+
+<!---------------------------------------------------------------------visit abroad-------------------------------------------------------------------------------------------------------------------------------------->
+<section class="visitabroad">
+    <section class="visitbkg">
+        <h1>EXPLORE THE WORLD WITH CONFIDENCE</h1>
+    </section>
+    <SECTION class="visitinfo">
+        <div class="visitrow">
+            <div class="visitcol">
+                <h1>Tailored Solutions for Your Journey</h1>
+                <p>At Immigration Pro, we specialize in turning your travel dreams into a reality. We offer expert visa strategies and itinerary writing, backed by personalized site suggestions. Our goal is to help you craft compelling visit reasons and stories that leave no room for visa denials. With our support, you'll embark on your travels with the utmost confidence.</p>
+            </div>
+            <div class="visitcol">
+                <h1>Discover Endless Destinations</h1>
+                <p>From Australia to Canada, North America to Europe, Africa to Asia, and South America to every corner of the globe – we make it possible for you to explore your dream destinations. Our services are designed to transform your travel dreams into vivid experiences, no matter where you long to go.</p>
+            </div>
+            <div class="visitcol">
+                <h1>Visa Rejections? Not Anymore</h1>
+                <p>Our team of expert consultants is your ultimate key to overcoming visa rejections. We tailor unique visa strategies to meet your specific needs, ensuring your success in every application. With us, you're not just a traveler; you're an explorer with the world at your feet.</p>
+                <div class="visitbtn">
+                    <a href="">
+                        <p>Learn More</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </SECTION>
+</section>
+<div style="clear:both;"></div>
+
+<!---------------------------------------------------------------------job abroad-------------------------------------------------------------------------------------------------------------------------------------->
+<section class="jobabroad">
+    <section class="jobbkg">
+        <h1>UNLOCK YOUR DREAM CAREER <br> WITH OUR EXPERT GUIDANCE</h1>
+    </section>
+    <section class="jobinfo">
+        <p class="jobintro">Discover a world of opportunities with our Resume Revamping and Winning Cover Letter services. We guide you in crafting compelling resumes and cover letters that stand out to employers worldwide. Our secret? Personalized AI prompts to accelerate your application process and increase your chances of success. Say goodbye to hours of painstaking resume writing and hello to your dream job.</p>
+        <div class="jobrow">
+            <div class="jobcol jobcol1">
+                <h1>Elevate Your Career with Professional Coaching</h1>
+                <p>Our Career Coaching sessions are designed to empower you for success in your chosen country. Our expert consultants provide tailored guidance to help you navigate the unique landscapes of various job markets. From interview preparation to networking strategies, we're here to ensure you not only secure a job abroad but thrive in your career.</p>
+            </div>
+            <div class="jobcol jobcol2">
+                <h1>Your Path to Success</h1>
+                <p>Get the edge in your international job hunt. We offer personalized guidance, career coaching, and a rich toolkit to transform your career aspirations into reality. Our expert team is dedicated to your success in the global job market. With us, your dream job is within reach.</p>
+                <div class="jobbtn">
+                    <a href="">
+                        <p>Learn More</p>
+                    </a>
+                </div>
+            </div>
+            <div class="jobcol">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/Aditions/jobimg.png" alt="resume graphic">
+            </div>
+        </div>
+    </section>
+</section>
+<div style="clear:both;"></div>
+
+<!--------------------------------------------------------------------be part of our journey----------------------------------------------------------------------------------------------------------------------------->
+<section class="journey">
+    <div class="words">
+       <h1>Be part of our Journey</h1>
+    </div>
+    <div class="journeyrow">
+        <div class="journeycol jcol1">
+            <p>Join our community of dreamers, achievers, and global explorers. When you book a consultation with Immigration Pro, you gain access to a world of possibilities:
+            </p>
+            <ul class="journeyul">
+                <li><i class="fa fa-fighter-jet"></i>Personalized Guidance: We tailor our services to meet your unique needs, ensuring your journey is one-of-a-kind.
+                </li>
+                <li><i class="fa fa-fighter-jet"></i>Time and Money Savings: Our expertise streamlines the complex processes, saving you valuable time and money.
+                </li>
+                <li><i class="fa fa-fighter-jet"></i>Expert Insights: Benefit from the experience of our dedicated professionals who are well-versed in immigration, education, and career domains.
+                </li>
+                <li><i class="fa fa-fighter-jet"></i>Confidence Building: Through our services, you'll gain confidence and the knowledge you need to pursue your dreams overseas.
+                </li>
+            </ul>
+            <p>Ready to take the first step? Book a paid consultation now and make your international dreams a reality.
+            </p>
+            <div class="paybtnw">
+            <div class="paybtn">
+                <a href="">
+                    <p>Book a Paid consultation</p>
+                </a>
+            </div>
+        </div>
+            <div class="journeydrawing jd1">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec5drawing1.png" alt="tourist drawing">
+            </div>
+            <div class="journeydrawing jd2">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec5drawing2.png" alt="tourist drawing">
+            </div>
+            <div class="journeydrawing jd3">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec5drawing3.png" alt="tourist drawing">
+            </div>
+        </div>
+        <div class="journeycol">
+            <div class="journeyimg">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec5img.png" alt="international departure">
+            </div>
+        </div>
+    </div>
+</section>
+<div style="clear:both;"></div>
+
+<!-----------------------------------------------------------------------------core values---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<section class="values">
+    <div class="valuesh1 words">
+        <h1>Our Guiding Principles</h1>
+    </div>
+    <div class="valuesrow valuesrow1">
+        <div class="valuescol">
+            <div class="value-list">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/simpleicn.png" alt="simple icon" class="valueicon">
+                <div class="value-container">
+                    <h1 class="value-title">SIMPLE</h1>
+                    <p class="value-description">We believe in simplifying complex processes, making immigration and education endeavors straightforward and stress-free for our clients. We cut through the red tape to provide clear and efficient services.</p>
+                </div>
+            </div>
+        </div>
+        <div class="valuescol">   
+            <div class="value-list">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/timesavingicn.png" alt="time saving icon" class="valueicon">
+                <div class="value-container">
+                    <h1 class="value-title">TIME-SAVING</h1>
+                    <p class="value-description">We understand the value of time. Our services are designed to save you time by streamlining the journey, providing efficient solutions, and reducing wait times. We expedite your progress toward your dreams.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="valuesrow valuesrow2">
+        <div class="valuescol">
+            <div class="value-list">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/transparenticn.png" alt="transparent icon" class="valueicon">
+                <div class="value-container">
+                    <h1 class="value-title">TRANSPARENT</h1>
+                    <p class="value-description">Transparency is at the heart of everything we do. We keep you informed at every step, ensuring you're aware of the process, timelines, and costs. No hidden agendas, just open and honest communication.</p>
+                </div>
+            </div>
+        </div>    
+        <div class="valuescol">
+            <div class="value-list">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/moneysavingicn.png" alt="money saving icon" class="valueicon">
+                <div class="value-container">
+                    <h1 class="value-title">MONEY-SAVING</h1>
+                    <p class="value-description">Cost-efficiency is a cornerstone of our approach. We help you make the most of your financial resources, offering services that provide value and cost-saving opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="valuesimg">
+        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/corevaaluesimg.png" alt="city landscape">
+    </div>
+</section>
+<div style="clear:both;"></div>
+
+<!-------------------------------------------------------------------ebooks shop----------------------------------------------------------------------------------------------------->
+<section class="shop">
+    <div class="shoph1 words">
+        <h1>Buy our e-books</h1>
+    </div>
+    <div class="shoprow">
+     <div class="shopcol">
+        <div class="shopdiv">
+        <div class="shopitemcontainer">
+            <div class="shopitem">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/thegoldenticketebook.png" alt="the golden ticket e-book">
+            </div>
+            <div class="shopitemdetails">
+                <h1 class="ebook-title">THE GOLDEN TICKET E-BOOK</h1>
+                <P class="descriptione">Unlock Your Golden Ticket eBook: Your Passport to Global Success
+                </P>
+                <P class="price">$100</P>
+            </div>
+            <div class="shopbtn">
+                <a href="">
+                    <p>Buy Now</p>
+                </a>
+            </div>
+        </div>
+            <div class="itemdes">
+                <h1>What’s inside?</h1>
+                <p>This comprehensive guide is your key to a world of possibilities. Inside, discover millions of pathways to travel, work, and study across the globe. Find tailored answers to all your immigration questions, simplified guides for various visa types, step-by-step job search strategies, resume revamping tips, interview-winning tactics, and a roadmap to international schools and scholarship opportunities. It's your all-in-one solution to conquer any immigration challenge.</p>
+            </div>
+        </div>
+
+     </div>
+        <div class="shopcol">
+            <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/shopimg.png" alt="city with plane" class="shopimg">
+        </div>
+    </div>
+</section>
+<div style="clear:both;"></div>
+
+<!-------------------------------------------------------------------testimonials----------------------------------------------------------------------------------------------------------------------------------------->
+<section class="success">
+    <div class="successh1 shoph1 words">
+        <h1>Success Stories</h1>
+    </div>
+    <p class="successp">Discover how Immigration Pro has transformed lives through tailored strategies and hassle-free solutions.</p>
+    <div class="successrow">
+        <div class="successcol scol1">
+            <div class="storycontainer container1">
+            <div class="story">
+                <div class="person">
+                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/woman%202.png" alt="woman">
+                </div>
+                <div class="testimony">
+                    <h1 class="author">
+                        - Jasmine Rose
+                    </h1>
+                    <p class="message">
+                        Securing a school in Australia seemed like a daunting task, but with Immigration Pro's support, it was a breeze. Their expertise and guidance made the process hassle-free. Now, I'm on my way to studying in Australia, all thanks to Immigration Pro.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="storycontainer">
+            <div class="story">
+                <div class="person">
+                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/man%203.png" alt="man">
+                </div>
+                <div class="testimony">
+                    <h1 class="author">
+                        - Muriel Limo
+                    </h1>
+                    <p class="message">
+                        Before I met Immigration Pro, my dream of moving to Canada felt out of reach. However, their expert guidance and personalized strategies not only made it possible but also simplified the process. Today, I'm living my dream in Canada, thanks to Immigration Pro.
+                    </p>
+                    <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="storycontainer">
+                <div class="story">
+                    <div class="person">
+                        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/man%202.png" alt="man">
+                    </div>
+                    <div class="testimony">
+                        <h1 class="author">
+                            - Oliver Bukuru
+                        </h1>
+                        <p class="message">
+                            Before I met Immigration Pro, I was suffering from US visa rejections, thanks to them, I overcame visa rejections, through their strategic planning and guidance, I got a German visa, then secured a U.S. visa. Now I'm in the U.S. with my girlfriend on a marriage green card.
+                        </p>
+                        <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+
+        <div class="successcol">
+            <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/recommendationsimg.png" alt="happy father and daughter" class="successimg">
+        </div>
+    </div>
+</section>
+<div style="clear:both;"></div>
+
+<!---------------------------------------------------------------------FAQ-------------------------------------------------------------------------------------------------------------------------------------->
+<section class="faq">
+    <div class="fqah1 words">
+        <h1>FAQ</h1>
+    </div>
+    <div class="faqrow">
+        <div class="faqcol faqcol1">
+            <div class="faq-container">
+                <div class="question">
+                    <span>What is Immigration Pro?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>Immigration Pro is your trusted partner for all immigration-related matters. We offer comprehensive services, including visa consultations, career coaching, school and job hunting services, resume revamping, IELTS tutoring, and more. We simplify the immigration process and make it easy for you to achieve your dreams.</p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="question">
+                    <span>How much does Immigration Pro's consultation cost?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>We offer affordable consultation services at just $200. We're committed to helping you navigate your immigration journey with expert guidance without breaking the bank.</p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="question">
+                    <span>Can Immigration Pro help me find a job abroad?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>Yes, we provide guidance and techniques to help you find job opportunities abroad. Our career coaching and job hunting services are designed to increase your chances of securing employment overseas.</p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="question">
+                    <span>Do you assist with student visas?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>Absolutely! We offer comprehensive assistance with student visas, including school hunting and application services. We'll help you find the right educational institution and guide you through the application process.</p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="question">
+                    <span>How can I improve my resume for international job applications?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>Our experts can revamp your resume to make it stand out to international employers. We'll highlight your skills and experience, giving you a competitive edge in the job market.</p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="question">
+                    <span>Can you assist with language proficiency tests like IELTS?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>Yes, we provide IELTS and English language tutoring to help you prepare for language proficiency exams. Our guidance will increase your chances of achieving the desired scores.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="faqcol faqcol2">
+            <div class="faq-container">
+                <div class="question">
+                    <span>Are your e-books country-specific?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>We offer both country-specific and general e-books. The country-specific e-books provide tailored guidance for specific destinations, while the general e-book covers a wide range of immigration topics.</p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="question">
+                    <span>How do I purchase an e-book from Immigration Pro?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>You can easily purchase our e-books through our online shop. Select your desired e-book and follow the straightforward purchasing process.</p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="question">
+                    <span>How can I book a consultation with Immigration Pro?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>Booking a consultation is simple. Just click on the 'Book a Paid Consultation' button and follow the prompts. Our experts are ready to assist you.</p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="question">
+                    <span>What core values does Immigration Pro uphold?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>Immigration Pro is dedicated to being simple, transparent, time-saving, and money-saving. We believe in providing accessible and affordable immigration solutions to all.</p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="question">
+                    <span>Are your services available worldwide?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>Yes, we offer our services to clients worldwide. Whether you're in South America, Asia, Africa, or anywhere else, we've got you covered.</p>
+                </div>
+            </div>
+
+            <div class="faq-container">
+                <div class="question">
+                    <span>Do you guarantee visa approvals?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>While we can't guarantee visa approvals, our experts will provide the best guidance and strategies to improve your chances of success. We're committed to your immigration journey's success.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        const questions = document.querySelectorAll('.question');
+        
+        questions.forEach((question) => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                } else {
+                    answer.style.display = 'block';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+            });
+        });
+    </script>
+</section>
+<div style="clear:both;"></div>
+
+<section class="footer">
+    <div class="footerlogo">
+        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/footerlogo.png" alt="ImmigrationPRO logo">
+    </div>
+    <div class="footerrow">
+        <div class="footercol footercol1">
+            <div class="contact">
+                <h1>Get In Touch</h1>
+                <ul>
+                    <a href="">
+                      <li><i class="fa fa-phone"></i>+1 236-301-0665</li>
+                    </a>
+                    <a href="">
+                      <li><i class="fa fa-envelope"></i>info@immigrationpro.org</li>
+                    </a>
+                    <a href="">
+                      <li><i class="fa fa-globe"></i>www.immigrationpro.org</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footercol footercol3">
+            <div class="address">
+                <h1>Address</h1>
+                <ul>
+                <a href="">
+                  <li><i class="fa fa-map-marker"></i>1048 Wellington St, Halifax,<br> NS B3H 2Z8, Canada</li>
+                </a>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footercol footercol2">
+            <div class="links">
+                <h1>Useful Links</h1>
+                <ul>
+                    <a href="">
+                        <li>Home</li>
+                    </a>
+                    <a href="">
+                        <li>About</li>
+                    </a>
+                    <a href="">
+                        <li>Pathways</li>
+                    </a>
+                    <a href="">
+                        <li>Contact</li>
+                    </a>
+                    <a href="">
+                        <li>Careers</li>
+                    </a>
+                    <a href="">
+                        <li>Blog</li>
+                    </a>
+                    <a href="#faq">
+                        <li>FAQ</li>
+                    </a>
+                    <a href="">
+                        <li>Charity</li>
+                    </a>
+                    <a href="">
+                        <li>E-book Shop</li>
+                    </a>
+                    <a href="">
+                        <li>Study Abroad</li>
+                    </a>
+                    <a href="">
+                        <li>Visit The World</li>
+                    </a>
+                    <a href="">
+                        <li>Abroad Career Coaching</li>
+                    </a>
+                    <a href="">
+                        <li>Resume Revamping</li>
+                    </a>
+                    <a href="">
+                        <li>Book A Consultation</li>
+                    </a>
+                    <a href="">
+                        <li>Leave A Message</li>
+                    </a>
+                    <a href="">
+                        <li>T&C</li>
+                    </a>
+                    <a href="">
+                        <li>Privacy Policy</li>
+                    </a>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footerdrawing">
+        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/footerdrawing.png" alt="tourist drawing">
+    </div>
+    <!--<div class="notice">
+        <h1>*Notice!</h1>
+        <p></p>
+    </div>-->
+    
+    <div class="social">
+       <a href="">
+        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/social/facebook.png" alt="facebook">
+       </a>
+       <a href="">
+        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/social/instagram.png" alt="instagram">
+       </a>
+       <a href="">
+        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/social/threads.png" alt="threads">
+       </a>
+       <a href="">
+        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/social/twitter.png" alt="twitter">
+       </a>
+       <a href="">
+        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/social/linkedin.png" alt="linkedin">
+       </a>
+       <a href="">
+        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/social/tiktok.png" alt="tiktok">
+       </a>
+       <a href="">
+        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/social/youtube.png" alt="youtube">
+       </a>
+
+    </div>
+
+    <div class="copyright">
+        <p><i class="fa fa-copyright"></i>2023 <a href="">ImmigrationPRO</a> all rights reserved. | <a href="">T&C</a> | <a href="">Privacy Policy</a> | <a href="">Coockie Policy</a> | <a href="">Help</a> |</p>
+    </div>
+
+</section>
+    </body>
+</html>
