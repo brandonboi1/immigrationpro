@@ -82,7 +82,8 @@ nav img{
 }
 
 .nav-links ul li:hover .dropdown-menu {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .nav-links ul li:hover::after{
@@ -114,6 +115,9 @@ nav img{
 }
 
 .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
     display: none;
     position: absolute;
     background-color: rgba(0,0,0,0.3);
