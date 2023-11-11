@@ -279,7 +279,7 @@ nav img{
 }
 
 .words{
-    margin-top: 4%;
+    margin-top: 8%;
     margin-left: 2%;
     justify-self: center;
 }
@@ -462,6 +462,7 @@ nav img{
     margin: 0;
     color: #004aad;
     font-weight: bold;
+    margin-left: 5%;
 }
 
 .service-description{
@@ -494,7 +495,7 @@ nav img{
 }
 
 .whatweoffer h1{
-    margin-left: 0%;
+    margin-left: 5%;
     margin-bottom: 0%;
 }
 
