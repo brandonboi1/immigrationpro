@@ -171,17 +171,39 @@ nav img{
         font-size: 0.8em;
       }
 
+
+      .journey{
+        overflow: hidden;
+      }
+
+      .studyabroad{
+        overflow: hidden;
+      }
+
+      .visitabroad{
+        overflow: hidden;
+      }
+
+      .jobabroad{
+        overflow: hidden;
+      }
+
     .navs{
-        width: 100%;
         overflow: hidden;
         max-width: 100%;
-        margin-right: -15%;
-
         position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        height: 5vh;
     }
 
+
     nav {
-        padding: 0 0;
+        padding: 2% 5% 2%;
     }
 
     .nav-links ul{
@@ -189,10 +211,6 @@ nav img{
         flex-direction: column;
         margin-left: 0%;
         overflow: hidden;
-    }
-
-    .header .navs{
-        margin-right: 0px;
     }
       
     .nav-links{
@@ -212,14 +230,20 @@ nav img{
         display: block;
         color: #8fd8ff;
         cursor: pointer;
-        font-size: 1.5em;
+        font-size: 1em;
         margin: 2%;
         margin-bottom: 2%;
+        padding: 2%;
     }
       
     .nav-links ul{
         padding: 2%;
         overflow: hidden;
+    }
+
+    .fa-bars{
+        margin-left: 50%;
+        padding: 2%;
     }
 
     h1{
@@ -232,6 +256,7 @@ nav img{
 
     body{
         max-width: 100%;
+        width: 100%;
     }
 
     .navs img{
@@ -241,7 +266,6 @@ nav img{
 
 
     .text-box img{
-        width: 100%;
         width: 100%;
     }
 
@@ -297,7 +321,7 @@ nav img{
     width: 100%;
 }
 
-.cashbtn{
+.cashbtn {
     font-size: 1em;
     margin-top: 5%;
     color: #004aad;
@@ -518,7 +542,7 @@ nav img{
 .whatweoffer .whatweofferimg img{
     width: 100%;
     top: 0;
-    margin-top: -15%;
+    margin-top: -35%;
 }
 
 .whatweoffer{
@@ -738,46 +762,54 @@ nav img{
 
 /*--------------------------------------------------------------------------------------study abroad-----------------------------------------------------------------------------------------------------------------------------*/
 .studybkg {
-    min-height: 100vh;
+    min-height: 60vh;
     width: 100%;
-    background-image:url(https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/1astudybkgredone.png);
-    background-position: center;
+    background-image: url(https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/1astudybkgredone.png);
+    background-position: center center;
     background-repeat: no-repeat;
     position: relative;
-    background-size: 100% 60%;
-    margin-bottom: 0px;
+    background-size: 100% auto;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.text-transition{
+.text-transition {
     font-weight: bold;
     color: #f1f1f0;
     font-size: 6.5em;
-    margin-left:36%;
-    margin-top: 1.5%;
-    bottom: 0px;
-    float: left;
+    position: absolute;
+    top: 62%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    width: 60%;
+}
+
+
+.studyh1 {
+    font-size: 1.6em;
+    color: #004aad;
+    margin-top: 1%;
+    top: 10%;
+    right: 5%;
+    position: absolute;
 }
 
 .country{
     color: #8fd8ff;
 }
 
-.studyh1{
-    margin-left: 70%;
-    font-size: 1.6em;
-    color: #004aad;
-    float: left;
-    margin-bottom: 0px;
-    margin-top: 14%;
-}
-
 .studyabroad{
-    margin-top: -6%;
+    margin-top: 1%;
+    margin-bottom: 0%;
 }
 
 .studyinfo{
-    margin-top: -8%;
+    margin-top: 1%;
     margin-bottom: 2%;
 }
 
@@ -787,16 +819,16 @@ nav img{
 }
 
 .studycol{
-    flex-basis: 30%;
+    flex-basis: 35%;
     margin: 1%;
     align-content: right;
     align-items: right;
 }
 
 .studycol img{
-    width: 100%;
-    float: right;
-    margin-right: -16.5%;
+    width: 28%;
+    position: absolute;
+    right: 0;
 
 }
 
@@ -815,7 +847,7 @@ nav img{
     align-self: right;
     text-decoration: none;
     position: right;
-    margin-top: 4%;
+    margin-top: 8%;
     border: 2px solid #004aad;
     width: fit-content;
     padding: 1%;
@@ -823,7 +855,8 @@ nav img{
     border-radius: 30px;
     font-weight: bold;
     background: #ffffff;
-    margin-left: 78%;
+    margin-left: 80%;
+    right: 0;
 
 }
 
@@ -842,23 +875,25 @@ nav img{
 }
 
 @media (max-width: 700px) {
-    .studybkg{
-        background-size: 100% 20% ;
+    .studybkg {
+        min-height: 18vh;
     }
     .text-transition{
         font-size: 2em;
-        margin-top: 3%;
+        top: 60%;
+        left: 70%;
+        transform: translate(-50%, -50%);
         
     }
 
     .studyh1{
-        margin-left: 48%;
-        font-size: 1em;
-        margin-top: 74%;
+        font-size: 0.8em;
     }
 
     .studyabroad{
-        margin-top: -70%;
+        margin-top: 0%;
+        margin-bottom: 0;
+        position: relative;
     }
 
     .studyrow{
@@ -877,55 +912,59 @@ nav img{
     }
 
     .studycol img{
-        width: 50%;
-        float: none;
-        margin-right: 25%;
-        margin-top: 5%;
-        border-radius: 10px;
-        border: 4px solid #004aad;
-        justify-content: center;
-        align-self: center;
+        display: none;
+
     
     }
 
     .studyinfo{
-        margin-top: -68%;
+        margin-top: 0%;
         margin-bottom: 2%;
     }
 
-}
+    .studybtn{
+        height: fit-content;
+        border-radius: 10px;
+    }
 
+}
 /*--------------------------------------------------------------------------------------visit abroad-----------------------------------------------------------------------------------------------------------------------------*/
 .visitbkg {
-    min-height: 100vh;
+    min-height: 60vh;
     width: 100%;
-    background-image:url(https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/Aditions/visitbkg.png);
-    background-position: center;
-    background-size: 100% auto;
-    position: relative;
+    background-image: url(https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/Aditions/visitbkg.png);
+    background-position: center center;
     background-repeat: no-repeat;
-    margin-top: 0px;
+    position: relative;
+    background-size: 100% auto;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .visitbkg h1{
     font-size: 4.5em;
-    margin-left: 5%;
-    margin-right: 5%;
     width: 90%;
     font-weight: bold;
-    margin-top: 34%;
-    float: inline-start;
     color: #f1f1f0;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .visitabroad{
-    margin-top: -8%;
+    margin-top: 0%;
+    margin-bottom: 0;
+    top: 0;
 }
 
 .visitbtn{
-    align-self: right;
     text-decoration: none;
-    position: right;
     margin-top: 4%;
     border: 2px solid #004aad;
     width: fit-content;
@@ -934,8 +973,12 @@ nav img{
     border-radius: 30px;
     font-weight: bold;
     background: #ffffff;
-    margin-left: 77%;
-
+    left: 1%;
+    height: 4vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 79%;
 }
 
 .visitbtn p{
@@ -954,10 +997,12 @@ nav img{
 
 .visitrow{
     display: flex;
-    margin-top: -6%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 1%;
+    left: 5%;
+    right: 5%;
     width: 90%;
+    position: relative;
+    max-height: fit-content;
 }
 
 .visitcol{
@@ -983,20 +1028,16 @@ nav img{
 @media (max-width: 700px){
     .visitbkg h1{
         font-size: 1.2em;
-        margin-top: 98%;
+    }
+
+    .visitbkg{
+        min-height: 17vh;
     }
     
-    .visitabroad{
-        margin-top: -70%;
-    }
 
     .visitrow{
         display: flex;
         flex-direction: column;
-        margin-top: -70%;
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 90%;
     }
 
     .visitcol h1{
@@ -1009,28 +1050,51 @@ nav img{
 
     .visitbtn{
         margin-left: 0%;
+        height: fit-content;
+        border-radius: 10px;
+        
+    }
+
+    .visitabroad{
+        margin-top: 0%;
+        margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 1050px) {
+    .header{
+        max-width: 100%;
+        width: 100%;
     }
 }
 
-
 /*--------------------------------------------------------------------------------------job abroad-----------------------------------------------------------------------------------------------------------------------------*/
 .jobbkg {
-    min-height: 100vh;
+    min-height: 40vh;
     width: 100%;
-    background-image:url(https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/Aditions/jobbkg.png);
-    background-position: center;
-    background-size: 100% auto;
-    position: relative;
+    background-image: url(https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/Aditions/jobbkg.png);
+    background-position: center center;
     background-repeat: no-repeat;
+    position: relative;
+    background-size: 100% auto;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .jobbkg h1{
-    font-size: 3.5em;
-    margin-left: 47%;
+    font-size: 3.2em;
     font-weight: bold;
-    margin-top: 20%;
-    float: inline-start;
     color: #004aad;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
 }
 
 .jobrow{
@@ -1057,7 +1121,7 @@ nav img{
 
 .jobcol img{
     width: 50%;
-    margin-top: -20%;
+    margin-top: -15%;
     margin-left: 25%;
 }
 
@@ -1070,7 +1134,6 @@ nav img{
     align-self: right;
     text-decoration: none;
     position: right;
-    margin-top: 4%;
     border: 2px solid #004aad;
     width: fit-content;
     padding: 1%;
@@ -1078,7 +1141,12 @@ nav img{
     border-radius: 30px;
     font-weight: bold;
     background: #ffffff;
-    margin-left: 77%;
+    left: 6%;
+    margin-top: 3%;
+    height: 1vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -1101,34 +1169,39 @@ nav img{
     font-size: 0.9em;
     width: 61%;
     margin-left: 6%;
-    margin-top: -13%;
+    margin-top: 1%;
     margin-bottom: 1%;
     text-align: justify;
 
 }
 
 .jobabroad{
-    margin-top: -12%;
+    margin-top: 0%;
+    margin-bottom: 0;
 }
 
 @media (max-width: 700px) {
-    .jobbkg h1{
-        font-size: 0.98em;
-        margin-left: 45%;
-        margin-top: 78%;
-    }
+.jobbkg {
+    min-height: 12vh;
+}
+.jobbkg h1{
+    font-size: 0.98em;
+}
 
-    .jobintro{
-        color: #6b6d62;
-        font-size: 0.6em;
-        width: 90%;
-        margin: 0 5%;
-        margin-top: -77%;
+.jobabroad{
+    margin-top: 0px;
+}
+.jobintro{
+    color: #6b6d62;
+    font-size: 0.6em;
+    width: 90%;
+    margin: 0 5%;
+    margin-top: 0px;
 }
 
 .jobcol img{
     width: 40%;
-    margin-top: 0%;
+    margin-top: 5%;
     margin-left: 30%;
     margin-right: 30;
 }
@@ -1157,20 +1230,18 @@ nav img{
 }
 
 .jobbtn{
-    margin-left: 0%;
+    height: fit-content;
+    border-radius: 10px;
 }
 
-.jobabroad{
-    margin-top: -75%;
-}
 
 }
 
 /*--------------------------------------------------------------------------be part of our journey----------------------------------------------------------------------------------------------------*/
 .journey{
     margin-left: 5%;
-    margin-right: 0;
-    margin-top: -2%;
+    margin-right: 0%;
+    margin-top: -5%;
 }
 
 .journey .words h1{
@@ -1205,26 +1276,29 @@ nav img{
     margin-top: 3%;
 }
 
-.journeydrawing img{
-    width: 30%;
+.journeydrawing{
+    margin-top: 5%;
+    flex-basis: 30%;
+    justify-content: space-evenly;
 }
 
-.journeydrawing{
+.jdrow{
     display: flex;
     flex-direction: row;
-    margin: 1%;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
 }
 
 .journeyimg img{
-    width: 88%;
+    width: 40%;
     height: auto;
-    position: right;
-    right: 0;
-    float: right;
-    justify-self: center;
-    align-self: center;
-    margin-bottom: 10%;
+    right: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .journeyrow{
@@ -1233,6 +1307,8 @@ nav img{
 
 .journeycol{
     flex-basis: 50%;
+    width: 100%;
+    max-width: 100%;
 }
 
 .jcol1{
@@ -1241,57 +1317,72 @@ nav img{
     width: 100%;
 }
 
-.jd2{
-    float: right;
-    margin-top: -45%;
-    margin-left: 30%;
-    margin-bottom: 0px;
-}
-
-.jd2 img{
-    width: 60%;
-    margin-bottom: 0px;
-}
-
-.jd3 img{
-    width: 150%;
-}
-
-.jd3{
-    float: right;
-    margin-top: -46%;
-    margin-left: 70%;
-    margin-bottom: 1%;
-}
-
 .jd1{
-    margin-top: 1%;
-    margin-left: -10%;
+    margin-right: 30%;
+    position: relative;
+    display: flex;
 }
 
 .jd1 img{
-    width: 35%;
+    width: 300%;
 }
 
-.paybtn{
+.jd2{
+    margin-right: 30%;
+    display: flex;
+}
+
+.jd2 img{
+    width: 300%;
+}
+
+.jd3{
+    display: flex;
+}
+
+.jd3 img{
+    width: 300%;
+}
+
+.journeycol .paybtn{
     font-size: 0.8em;
-    margin-top: 5%;
+    margin-top: 2%;
+    margin-left: 2%;
     color: #004aad;
     border: 2px solid #004aad;
     padding: 1%;
     border-radius: 30px;
     font-weight: bold;
     background-color: #ffffff;
-    width: 25%;
+    width: fit-content;
+    max-width: 100%;
+    text-align: left;
     transition: 3s;
+    position: relative;
+    height: 4vh;
+    display: flex;
+    align-items: center;
     
 }
 
-.paybtn a{
+.paybtn p{
+    width: 100%;
+    color: #004aad;
+    align-items: center;
+    display: flex;
+}
+
+
+div{
+    clear: both;
+}
+
+.journeycol .paybtn a{
     text-decoration: none;
     color: #004aad;
     text-align: left;
-    justify-content: left;
+    width: max-content;
+    max-width: 100%;
 }
 
 .paybtn:hover{
@@ -1316,18 +1407,6 @@ nav img{
         display: none;
     }
 
-    .paybtn{
-        width: 24%;
-    }
-
-    .journeyimg img{
-        width: 50%;
-        float: none;
-        margin-top: 3%;
-        margin-left: 48%;
-        border-radius: 10px;
-        border: 4px solid #6b6d62;
-    }
     
     .journeyrow{
         display: flex;
@@ -1339,6 +1418,20 @@ nav img{
         margin-left: 0%;
         width: 95%;
     }
+
+    .journeycol .paybtn{
+        height: fit-content;
+        border-radius: 10px;
+    }
+
+    .journeyimg img{
+        display: none;
+    }
+
+    .journey{
+        margin-top: 0;
+        height: 100%;
+    }
 }
 
 /*----------------------------------------------------------core values----------------------------------------------------------------------------------------------------------*/
@@ -1348,9 +1441,7 @@ nav img{
     margin-top: -8%;
 }
 
-.values{
-    margin-top: -3%;
-}
+
 
 .valuesimg{
     width: 90%;
@@ -1801,6 +1892,13 @@ nav img{
         width: 98%;
     }
 
+    .success{
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+
 }
 
 /*----------------------------------------------------------------FQA---------------------------------------------------------------------------------*/
@@ -1976,27 +2074,27 @@ nav img{
     float: right;
     margin-top: -18%;
     margin-right: 20%;
+    position: relative;
 }
 
 .social img{
-    width: 10%;
+    width: 2.5%;
     padding: 0.1%;
 }
 
 .social{
     display: block;
-    float: right;
-    margin-left: 80%;
-    position: relative;
-    margin-top: 5%;
-    margin-bottom: 1%;
+    bottom: 8%;
+    left: 75%;
+    position: absolute;
+    width: 100%;
 }
 
 .copyright{
-    margin-top: 10%;
-    margin-left: 53.3%;
-    margin-bottom: -1%;
-    position: relative;
+    bottom: 5%;
+    left: 51.1%;
+    position: absolute;
+    width: 100%;
 }
 
 .copyright a:hover{
@@ -2039,27 +2137,33 @@ nav img{
 
     .social{
         display: block;
-        float: right;
-        margin-left: 40%;
-        position: relative;
-        margin-top: 25%;
-        margin-bottom: 1%;
+        left: 5%;
+        right: 50;
+        position: absolute;
+        top: 90%;
+        bottom: 1%;
+        transform: translate(-50% -50%);
     }
 
     .copyright{
-        margin-top: 70%;
-        margin-left: 8%;
-        margin-right: 5%;
+        top: 95%;
+        left: 5%;
+        right: 50%;
         width: 90%;
-        margin-bottom: -1%;
-        position: relative;
-        font-size: 1em;
+        position: absolute;
+        font-size: 0.9em;
+        transform: translate(-50% -50%);
     }
 
     .footerdrawing img{
         width: 50%;
-        float: right;
-        margin-top: 10%;
-        margin-right: 10%;
+        position: absolute;
+        display: flex;
+        top: 50%;
+        right: 1%;
+    }
+
+    .footer{
+        overflow: hidden;
     }
 }
