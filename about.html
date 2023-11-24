@@ -12,7 +12,7 @@
 </script>
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta charset="UTF-8">
-        <title>ImmigrationPRO</title>
+        <title>About Us - ImmigrationPRO</title>
         <link rel="stylesheet" href="home.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,15 +27,15 @@
 <meta name="theme-color" content="#004aad">
     </head>
     <body>
-        <section class="header">
+        <section class="headerabout">
             <nav class="navs">
                 <a href="#"><img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPRO/logo%20transparent.png" alt="Logo"></a>
                 <div class="nav-links" id="navlinks">
                     <i class="fas fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li class="dropdown">
-                            <a href="#">About</a>
+                            <a href="about.html">About</a>
                             <ul class="dropdown-menu dropdown1">
                                 <li><a href="about.html">About Us</a></li>
                                 <li><a href="#">Charity</a></li>
@@ -74,7 +74,7 @@
             
             <script>
                 document.addEventListener("DOMContentLoaded", function() {
-                var header = document.querySelector('.header');
+                var header = document.querySelector('.headerabout');
                 var nav = document.querySelector('.navs');
 
                 window.addEventListener('scroll', function() {
@@ -111,117 +111,194 @@
               });
                });
                });
-            </script>  
-        </section>
-
-        <section class="header2">
-            <div class="header-video">
-                <video autoplay muted loop>
-                    <source src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/00011aaavidbkg.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="overlay-text">Dreams  Take  Flight <button class="overlay-button">Book a paid consultation</button></div>
-                <div class="overlay-container">
-                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/00011aaaplaneheader.png" alt="Overlay Image">
-                </div>
-            </div>
-            <div class="text-transition1" id="ease-text">
-                IMMIGRATION MADE <span id="ease-name" class="immig">
-                    <span id="stroke-text"></span>SIMPLE
-                </span>
-            </div>
-            <script>
-                const easePhrases = ['SIMPLE', 'EASY', 'AFFORDABLE', 'TRANSPARENT','ACCESSIBLE'];
-                let easeIndex = 0;
-                const easeName = document.getElementById('ease-name');
-                const strokeText = document.getElementById('stroke-text');
-            
-                function changeEase() {
-                    strokeText.style.width = '0';
-                    setTimeout(() => {
-                        easeIndex = (easeIndex + 1) % easePhrases.length;
-                        const currentPhrase = easePhrases[easeIndex];
-                        let i = 0;
-                        const interval = setInterval(() => {
-                            easeName.textContent = currentPhrase.slice(0, i + 1);
-                            strokeText.textContent = currentPhrase.slice(0, i + 1);
-                            strokeText.style.width = 'auto'; // Allow the stroke to be as wide as the content
-                            i++;
-                            if (i === currentPhrase.length) {
-                                clearInterval(interval);
-                            }
-                        }, 100);
-                    }, 500);
-                }
-            
-                changeEase();
-            
-                setInterval(changeEase, 3000);
             </script>
- 
+
+            <nav class="text-box">
+                <div class="pgtittle">
+                    <h1>ABOUT US</h1>
+                </div>
+                <div class="pgdes">
+                    <p>Dreams Take Flight.</p>
+                </div>
+            </nav>
         </section>
 
-<!---------------------------------------------------------INTRO SECTION----------------------------------------------------------------------------------------------->
-        <section>
-            <div class="sec1row">
-            <div class="sec1col">
-                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec1imgfam.png" alt="happy family">
-
-            </div>
-            <div class="sec1col words">
-                <h1>Transforming Dreams into <br>Reality</h1>
-                <p>At Immigration Pro, we are dedicated to transforming your dreams into reality. Our mission is to guide you through the immigration journey, ensuring it's a seamless and accessible process. With decades of experience, our team of experts is committed to providing clarity, simplicity, and transparency in every step. We don't just offer services; we provide solutions that validate your dreams. Our dedication to affordability, combined with personalized attention, sets us apart.
+<!---------------------------------------------------------about us----------------------------------------------------------------------------------------------->
+<section class="aboutus">
+        <div class="aboutrow">
+            <div class="aboutcol words wordsabout">
+                <h1>Who are we?</h1>
+                <p>At Immigration Pro, we transcend consultancy; we embody the dreams and stories of those seeking new beginnings. Our identity is woven from the threads of collective experiences, where challenges met resilient spirits, and triumphs echoed through diverse backgrounds.
                 </p> <br>
-                <p>Our comprehensive services encompass visa applications, relocation assistance, career coaching, school applications, job-hunting techniques, resume revamping, IELTS tutoring, and much more. We tailor our solutions to your unique needs, backed by in-depth industry knowledge and government compliance. Every interaction with Immigration Pro is a step closer to your dream destination.
+                <p>We are not just consultants; we are empathizers, having faced immigration struggles firsthand. From the intricate visa processes to battling misinformation, our team has navigated the complex terrain. We bring this empathy into our service, understanding the nuances of your journey.
                 </p> <br>
-                <p>Take the first vital step today. Book a paid consultation with us for just $200. Our consultants offer personalized advice, clarify your doubts, and provide a clear roadmap to your immigration goals. It's an investment in your dreams, a chance to ensure that your journey is not just a dream but a reality. Together, let's embark on a path where aspirations become achievements.
+                <p>Our founders, originating from Africa, Asia, and various third-world countries, forged Immigration Pro as a beacon of diversity. This diversity is our strength, shaping a consultancy that resonates with the varied needs of individuals worldwide.
+                </p><br>
+                <p>Immigration Pro is a family, a network of support where dreams find their wings. Our commitment extends beyond consultations; we invest in your success. Each interaction is a step towards a transparent, accessible, and honest immigration experience.
+                </p><br>
+                <p>Ready to Begin Your Journey?
                 </p>
                 <div class="cashbtn">
                     <a href="checkoutform.html"><p>Book a Paid consultation</p></a>
                 </div>
+            </div>
+            <div class="aboutcol">
+                <div>
+                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/001aainnigrationproaboutus/usimg.png" alt="ImmigrationPRO team">
+                </div>
+                <div class="abouttag">
+                    <h1>#WEAREIMMIGRATIONPRO</h1>
                 </div>
             </div>
-        </section>
+        </div>
+</section>
 
-<!---------------------------------------------------------------DESTINATIONS------------------------------------------------------------------------->
-        <section class="section2">
-            <div class="sec2 words">
-                <h1>Travel Destinations</h1>
-            </div>
-            <div class="sec2row sec1row">
-                <div class="sec2col sec1col">
-                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec2drawing.png" alt="plane drawing">
+<!---------------------------------------------------------------our story------------------------------------------------------------------------->
+        <section class="ourstory">
+            <div class="ourstoryrow">
+                <div class="ourstorycol">
+                    <div class="ourstorycontainer">
+                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/001aainnigrationproaboutus/ourstoryimg.png" alt="Afro-child black and white" class="ourstoryimg">
+                    <div class="ourstoryh1">
+                        <h1>OUR STORY</h1>
+                      </div>
+                  </div>
                 </div>
-                <div class="sec2col sec1col sec2col2">
-                    <p>Explore Your World - From the vibrant cities of the USA to the picturesque landscapes of New Zealand, and the rich history of Europe to the vast wilderness of Canada and the stunning beauty of Australia. Discover the endless possibilities and diverse cultures these destinations offer. Where will your dreams take flight?
+                <div class="ourstorycol wordsstory">
+                    <p>In the tapestry of Immigration Pro's narrative, the threads are woven with shared struggles, relentless determination, and an unwavering belief in the power of dreams.
+                    </p> <br>
+                    <p>Our story begins with shared experiences of immigration struggles. From the sleepless nights to the countless paperwork, we've felt the weight of uncertainty. This empathy fuels our commitment to guide you through a smoother, more transparent path.
+                    </p> <br>
+                    <p>Look into the eyes of the young girl in our image—a reflection of every individual who dreams beyond borders. Our founders, inspired by their own histories, established Immigration Pro as a sanctuary for dreams, a place where resilience prevails.
                     </p><br>
-                    <p>Plus, we offer services for destinations across the globe, from South America to Asia, and Africa. We've got you covered wherever your dreams may lead you.</p>
-                </div>
-            </div>
-
-            <div class="destinations">
-                <div class="destination">
-                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec2usa.png" alt="New York USA">
-                    <h1>USA</h1>
-                </div>
-                <div class="destination">
-                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec2ca.png" alt="Toronto Canada">
-                    <h1>CANADA</h1>
-                </div>
-                <div class="destination">
-                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec2au.png" alt="Opera house Australia">
-                    <h1>AUSTRALIA</h1>
-                </div>
-                <div class="destination">
-                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec2nz.png" alt="Auckland New Zealand">
-                    <h1>NEW ZEALAND</h1>
-                </div>
-                <div class="destination">
-                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec2europe.png" alt="EU">
-                    <h1>EUROPE</h1>
+                    <p>Every consultation, every success story, fuels our passion to rewrite the immigration narrative. It's not just a service; it's a mission. We are driven by the belief that every dream, irrespective of its origin, deserves a chance to soar.
+                    </p><br>
+                    <p>Understanding that everyone is unique, just like us, we tailor each service to satisfy every individual uniquely. Your dreams are distinct, and so is our approach to making them a reality.
+                    </p><br>
+                    <p>Our commitment extends beyond individual aspirations. With the hashtag #endimmigrationfraud, we stand against the exploitation that many face. Immigration Pro is not just about dreams taking flight; it's about safeguarding those dreams from the shadows of fraudulent practices. Together, let's create a future free from the stains of immigration fraud.
+                    </p>
+                    <div class="ourstorytag">
+                        <h1>#ENDIMMIGRATIONFRAUD</h1>
+                    </div>
                 </div>
             </div>
         </section>
+
+<!----------------------------------------------------------------mission and vision--------------------------------------------------------------------------------------------------------------------------------------------------->
+<section class="mv">
+    <div class="mvrow">
+        <div class="mvcol">
+          <div class="mcol">
+            <div class="mcontent">
+                <h1>Our Mission</h1>
+                <p>At Immigration Pro, our mission transcends borders. We are on a relentless quest to redefine the immigration experience, making it a journey marked by clarity, accessibility, and unwavering support. Every service we offer, every consultation we provide is a testament to our commitment to guide you through the intricate path of immigration, ensuring your dreams take flight.</p>
+            </div>
+            <div class="mimg">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/001aainnigrationproaboutus/our%20mission.png" alt="team">
+            </div>
+          </div>
+        </div>
+        <div class="mvcol">
+           <div class="vcol">
+            <div class="vimg">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/001aainnigrationproaboutus/our%20vision.png" alt="team celebrating">
+            </div>
+            <div class="mcontent vcontent">
+                <h1>Our Vision</h1>
+                <p>In the tapestry of our vision lies a world where dreams know no borders, where individuals are empowered to pursue opportunities beyond geographic constraints. We envision a future where Immigration Pro becomes synonymous with trust, reliability, and the realization of aspirations. Our vision is anchored in the belief that, through our services, we can shape a world where immigration is not a hurdle but a gateway to new beginnings.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<!-----------------------------------------------------------------charity--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<section class="charity">
+    <div class="charityrow">
+        <div class="charitycol">
+            <div class="charityh1">
+                <h1>Our Charity</h1>
+            </div>
+            <div class="charitycontents">
+                <p>At Immigration Pro, our commitment to community transcends borders. Our charity was born from the very struggles we, the founders, faced in our youth - dreams juxtaposed with financial constraints. We understand the uphill journey, and that's why our charity operates on the principle of 1 Help 1. It’s not just financial aid; it's a circle of empowerment.
+                </p> <br>
+                <p>This isn't charity in the conventional sense. It’s a transformative network. When we assist someone in achieving their dreams, they commit to helping another individual in need. We're cultivating a global community where success isn’t a solitary journey; it's a relay of support, each person passing on the baton of opportunity.
+                </p><br>
+                <p>Your investment in our services isn’t just an investment in yourself; it’s a contribution to a cycle of empowerment. Every 40% of your payment goes directly into initiatives that lift others. Together, we're not just changing lives; we're creating a future where success is shared, and dreams take flight for everyone.
+                </p><br>
+                <p>Our charity isn’t a one-time affair. It’s an ongoing commitment. Every year, as our community grows, so does our impact. At the end of each year, all the earnings we’ve collected are channeled into projects that make a difference. As we grow, our vision is to extend this support monthly, creating a continuous cycle of empowerment.
+                </p><br>
+                <p>Join us in this unique journey where your dreams not only become a reality but also contribute to a broader narrative of shared success.
+                </p>
+            </div>
+            <div class="charitybtn cashbtn">
+                <a href="#">
+                    <p>Learn More</p>
+                </a>
+            </div>
+        </div>
+        <div class="charitycol">
+            <div class="charityimg">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/001aainnigrationproaboutus/our%20charity.png" alt="hands with a red heart">
+            </div>
+            <div class="charitytag abouttag">
+                <h1>#WEAREIMMIGRATIONPRO</h1>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-----------------------------------------------------------------------------core values---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<section class="values">
+    <div class="valuesh1 words">
+        <h1>Our Guiding Principles</h1>
+    </div>
+    <div class="valuesrow valuesrow1">
+        <div class="valuescol">
+            <div class="value-list">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/simpleicn.png" alt="simple icon" class="valueicon">
+                <div class="value-container">
+                    <h1 class="value-title">SIMPLE</h1>
+                    <p class="value-description">We believe in simplifying complex processes, making immigration and education endeavors straightforward and stress-free for our clients. We cut through the red tape to provide clear and efficient services.</p>
+                </div>
+            </div>
+        </div>
+        <div class="valuescol">   
+            <div class="value-list">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/timesavingicn.png" alt="time saving icon" class="valueicon">
+                <div class="value-container">
+                    <h1 class="value-title">TIME-SAVING</h1>
+                    <p class="value-description">We understand the value of time. Our services are designed to save you time by streamlining the journey, providing efficient solutions, and reducing wait times. We expedite your progress toward your dreams.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="valuesrow valuesrow2">
+        <div class="valuescol">
+            <div class="value-list">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/transparenticn.png" alt="transparent icon" class="valueicon">
+                <div class="value-container">
+                    <h1 class="value-title">TRANSPARENT</h1>
+                    <p class="value-description">Transparency is at the heart of everything we do. We keep you informed at every step, ensuring you're aware of the process, timelines, and costs. No hidden agendas, just open and honest communication.</p>
+                </div>
+            </div>
+        </div>    
+        <div class="valuescol">
+            <div class="value-list">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/moneysavingicn.png" alt="money saving icon" class="valueicon">
+                <div class="value-container">
+                    <h1 class="value-title">MONEY-SAVING</h1>
+                    <p class="value-description">Cost-efficiency is a cornerstone of our approach. We help you make the most of your financial resources, offering services that provide value and cost-saving opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="valuesimg">
+        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/corevaaluesimg.png" alt="city landscape">
+    </div>
+</section>
 
 <!---------------------------------------------------------what we offer----------------------------------------------------------------------------------------------------------------------------------------------->
         <section class="whatweoffer">
@@ -481,57 +558,6 @@
                 <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/sec5img.png" alt="international departure">
             </div>
         </div>
-    </div>
-</section>
-
-<!-----------------------------------------------------------------------------core values---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<section class="values">
-    <div class="valuesh1 words">
-        <h1>Our Guiding Principles</h1>
-    </div>
-    <div class="valuesrow valuesrow1">
-        <div class="valuescol">
-            <div class="value-list">
-                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/simpleicn.png" alt="simple icon" class="valueicon">
-                <div class="value-container">
-                    <h1 class="value-title">SIMPLE</h1>
-                    <p class="value-description">We believe in simplifying complex processes, making immigration and education endeavors straightforward and stress-free for our clients. We cut through the red tape to provide clear and efficient services.</p>
-                </div>
-            </div>
-        </div>
-        <div class="valuescol">   
-            <div class="value-list">
-                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/timesavingicn.png" alt="time saving icon" class="valueicon">
-                <div class="value-container">
-                    <h1 class="value-title">TIME-SAVING</h1>
-                    <p class="value-description">We understand the value of time. Our services are designed to save you time by streamlining the journey, providing efficient solutions, and reducing wait times. We expedite your progress toward your dreams.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="valuesrow valuesrow2">
-        <div class="valuescol">
-            <div class="value-list">
-                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/transparenticn.png" alt="transparent icon" class="valueicon">
-                <div class="value-container">
-                    <h1 class="value-title">TRANSPARENT</h1>
-                    <p class="value-description">Transparency is at the heart of everything we do. We keep you informed at every step, ensuring you're aware of the process, timelines, and costs. No hidden agendas, just open and honest communication.</p>
-                </div>
-            </div>
-        </div>    
-        <div class="valuescol">
-            <div class="value-list">
-                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/moneysavingicn.png" alt="money saving icon" class="valueicon">
-                <div class="value-container">
-                    <h1 class="value-title">MONEY-SAVING</h1>
-                    <p class="value-description">Cost-efficiency is a cornerstone of our approach. We help you make the most of your financial resources, offering services that provide value and cost-saving opportunities.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="valuesimg">
-        <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/corevaaluesimg.png" alt="city landscape">
     </div>
 </section>
 
@@ -807,6 +833,7 @@
         });
     </script>
 </section>
+<div style="clear:both;"></div>
 
 <section class="footer">
     <div class="footerlogo">
@@ -1015,5 +1042,5 @@
 
     </div>
 </section>
-    </body>
+</body>
 </html>

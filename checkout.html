@@ -11,8 +11,10 @@
   gtag('config', 'G-V8NDH58Z4D');
 </script>
 <meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title>Checkout - ImmigrationPRO</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/minstyle.io@2.0.1/dist/css/minstyle.io.min.css">
         <link rel="stylesheet" href="home.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,56 +27,41 @@
 <link rel="icon" href="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/01aimmigrationpro%20favicon/android-chrome-512x512.png" type="image/png">
 <link rel="icon" href="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/01aimmigrationpro%20favicon/android-chrome-192x192.png" type="image/png">
 <meta name="theme-color" content="#004aad">
+<script src="script.js"></script>
     </head>
     <body>
-        <section class="checkout">
-            <div class="checkoutrow">
-                <div class="checkoutcol">
-                    <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/checkoutformimg.png" alt="Man in a good mood">
-                  </div>
-                <div class="checkoutcol">
-            <div class="form-container">
-                <h2>Embark on Your Immigration Journey: Just One Step Away!</h2>
-                <form id="checkoutform">
-                <div class="cform">
-                  <input placeholder="Name" type="text" id="name"  required>
-                  <input placeholder="citizenship" type="text" id="citizenship" required>
-                  <input placeholder="Passport Number" type="text" id="Passport" required>
-                  <input placeholder="Country of Birth" type="text" id="Birth" required>
-                  <input placeholder="Country of Residence" type="text" id="Country" required>
-                  <input placeholder="Service Needed" type="text" id="Service" required>
-                  <input placeholder="Email" type="email" id="Email" required>
-                  <input placeholder="Your Phone Number" type="tel" id="tel" required>
-                  <textarea placeholder="Your Message" id="message"></textarea>
-                </div>
+        <section class="checkout2">
+            <div class="checkout2row">
+                <div class="checkout2col">
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-sm"></div>
+                          <div class="col-sm">
+                            <h2 class="ms-text-center">Book Your Consultation Today and Let Your Dreams Take Flight!</h2>
+                            <div class="ms-text-center pb-2">
+                                <div class="ms-label ms-large ms-action2 ms-light due" style="color: #004aad; background-color: #ffffff; font-size: 0.8em;">Due Now $200.00 USD</div>
+                              </div>
+                            <div id="alerts" class="ms-text-center"></div>
+                            <div id="loading" class="spinner-container ms-div-center">
+                              <div class="spinner"></div>
+                            </div>
+                            <div id="content" class="hide">
+                              <div class="ms-card ms-fill">
+                                <div class="ms-card-content">
+                                  <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/01acheckoutimglogo.png" class="cimg">
+                                </div>
+                              </div>
+                              <div id="payment_options"></div>
+                            </div>
+                          </div>
+                          <div class="col-sm"></div>
+                        </div>
+                      </div>
             
-
-                  <div class="checkbox-container">
-                    <div class="box1">
-                    <input type="checkbox" id="termsCheckbox" required>
-                    <label for="termsCheckbox">I have read and agree to the <a href="/terms-and-conditions" target="_blank">Terms and Conditions.</a></label>
-                    </div>
-
-                    <div class="box2">
-                    <input type="checkbox" id="privacyCheckbox" required>
-                    <label for="privacyCheckbox">I have read and agree to the <a href="/privacy-policy" target="_blank">Privacy Policy.</a></label>
-                    </div>
-
-                    <div class="box3">
-                    <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
-                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                    <p id="recaptchaWarning">Please complete the reCAPTCHA verification.</p>
-                    </div>
-                  </div>
-            
-                  <!-- Proceed to checkout button -->
-                  <a href="checkout.html">
-                  <div class="button">
-                  </a>
-                  <button type="button" id="checkoutButton" disabled>Proceed to Checkout</button><p class="due">Due Now $200</p>
                 </div>
-                </form>
-              </div>
+
+              <div class="checkout2col">
+                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/Checkoutimg.png" alt="Man in a good mood" class="colimg2">
               </div>
             </div>
             <script>
