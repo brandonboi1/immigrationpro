@@ -11,10 +11,8 @@
   gtag('config', 'G-V8NDH58Z4D');
 </script>
 <meta charset="utf-8" />
-<meta http-equiv="x-ua-compatible" content="ie=edge" />
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>Checkout - ImmigrationPRO</title>
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/minstyle.io@2.0.1/dist/css/minstyle.io.min.css">
+        <title>Careers - ImmigrationPRO</title>
         <link rel="stylesheet" href="home.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,61 +25,223 @@
 <link rel="icon" href="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/01aimmigrationpro%20favicon/android-chrome-512x512.png" type="image/png">
 <link rel="icon" href="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/01aimmigrationpro%20favicon/android-chrome-192x192.png" type="image/png">
 <meta name="theme-color" content="#004aad">
-<script src="script.js"></script>
     </head>
     <body>
-        <section class="checkout2">
-            <div class="checkout2row">
-                <div class="checkout2col">
-                    <div class="container">
-                        <div class="row">
-                          <div class="col-sm"></div>
-                          <div class="col-sm">
-                            <h2 class="ms-text-center">Book Your Consultation Today and Let Your Dreams Take Flight!</h2>
-                            <div class="ms-text-center pb-2">
-                                <div class="ms-label ms-large ms-action2 ms-light due" style="color: #004aad; background-color: #ffffff; font-size: 0.8em;">Due Now $200.00 USD</div>
-                              </div>
-                            <div id="alerts" class="ms-text-center"></div>
-                            <div id="loading" class="spinner-container ms-div-center">
-                              <div class="spinner"></div>
-                            </div>
-                            <div id="content" class="hide">
-                              <div class="ms-card ms-fill">
-                                <div class="ms-card-content">
-                                  <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/01acheckoutimglogo.png" class="cimg">
-                                </div>
-                              </div>
-                              <div id="payment_options"></div>
-                            </div>
-                          </div>
-                          <div class="col-sm"></div>
-                        </div>
-                      </div>
-            
+<!--------------------------------------------------------------------------------------header-------------------------------------------------------------------------------------------------->
+<section class="headercareers headerabout">
+    <nav class="navs">
+        <a href="#"><img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPRO/logo%20transparent.png" alt="Logo"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html">About</a>
+                    <ul class="dropdown-menu dropdown1">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html">Charity</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="pathways.html">Pathways</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pathways.html">Pathways</a></li>
+                        <li><a href="pathways.html">Study Abroad</a></li>
+                        <li><a href="pathways.html">Employment Abroad</a></li>
+                        <li><a href="pathways.html">Move Abroad</a></li>
+                        <li><a href="pathways.html">Asylum Abroad</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <script>
+        // Toggle menu code
+       var navlinks = document.getElementById("navlinks");
+       
+       function showMenu() {
+         navlinks.style.right = "0";
+       }
+       
+       function hideMenu() {
+         navlinks.style.right = "-5000px";
+       }
+    </script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var header = document.querySelector('.headerabout');
+        var nav = document.querySelector('.navs');
+
+        window.addEventListener('scroll', function() {
+        var scrollPos = window.scrollY;
+
+        if (scrollPos > header.offsetHeight) {
+        nav.classList.add('scrolled');
+        } else {
+        nav.classList.remove('scrolled');
+        }
+        });  
+          });
+    </script>
+
+    <script>
+       document.addEventListener("DOMContentLoaded", function() {
+       var dropdowns = document.querySelectorAll('.dropdown');
+
+       dropdowns.forEach(function(dropdown) {
+       var dropdownToggle = dropdown.querySelector('a');
+       var dropdownMenu = dropdown.querySelector('.dropdown-menu');
+
+       dropdownToggle.addEventListener('mouseenter', function() {
+       dropdownMenu.classList.add('show');
+       });
+
+       dropdownToggle.addEventListener('click', function(event) {
+       event.preventDefault();
+       dropdownMenu.classList.toggle('show');
+       });
+
+      dropdown.addEventListener('mouseleave', function() {
+      dropdownMenu.classList.remove('show');
+      });
+       });
+       });
+    </script>
+
+    <nav class="text-box">
+        <div class="pgtittle">
+            <h1>CAREERS</h1>
+        </div>
+        <div class="pgdes">
+            <p>Dreams Take Flight.</p>
+        </div>
+    </nav>
+</section>
+
+<section class="jobs">
+    <div class="workj">
+    <h1>Working at ImmigrationPRO</h1>
+    <P>LegalVision is a team of lawyers, technologists, marketing mavericks, solutions consultants and operations gurus who are drawn together by a shared vision of changing the delivery of legal services.</P>
+    </div>
+    <div class="benefits">
+        <h1>Benefits of working at ImmigrationPRO</h1>
+        <div class="benefitscol">
+            <div class="container">
+                <div class="content">
+                    <ion-icon name="laptop-outline"></ion-icon>
+                  <h2>Work Remotely</h2>
                 </div>
-
-              <div class="checkout2col">
-                <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPROHPG/Checkoutimg.png" alt="Man in a good mood" class="colimg2">
+                <div class="paragraph">
+                  <p>Due to our international nature, <br>we fully support and practice <br>remote work.</p>
+                </div>
               </div>
-            </div>
-            <script>
-                function calculateAmount() {
-  const beneficiaries = document.getElementById('beneficiaries').value;
-  const feePerBeneficiary = 200;
-  const totalFee = beneficiaries * feePerBeneficiary;
 
-  document.getElementById('feeWarning').innerText = `Each beneficiary pays a separate fee of $${feePerBeneficiary}.`;
-  document.getElementById('amountDue').innerText = `Amount Due: $${totalFee}`;
+              <div class="container">
+                <div class="content">
+                    <ion-icon name="airplane-outline"></ion-icon>
+                  <h2>International Travels</h2>
+                </div>
+                <div class="paragraph">
+                    <p>Due to our international nature, <br>our staff travel from <br>country to country.</p>
+                </div>
+              </div>
 
-  // Hide the reCAPTCHA warning
-  document.getElementById('recaptchaWarning').style.display = 'none';
-}
-            </script>
-            
-              <script src="script.js"></script>
+              <div class="container">
+                <div class="content">
+                    <ion-icon name="people-circle-outline"></ion-icon>
+                  <h2>Team Building</h2>
+                </div>
+                <div class="paragraph">
+                    <p>Due to our international nature, <br>we fully support and practice <br>remote work.</p>
+                </div>
+              </div>
 
-        </section>
+              <div class="container">
+                <div class="content">
+                    <ion-icon name="earth-outline"></ion-icon>
+                  <h2>Multicultural Experience</h2>
+                </div>
+                <div class="paragraph">
+                    <p>Due to our international nature, <br>we fully support and practice <br>remote work.</p>
+                </div>
+              </div>
+        </div>
 
+        <div class="benefitscol">
+            <div class="container">
+                <div class="content">
+                    <ion-icon name="alarm-outline"></ion-icon>
+                  <h2>Flexible Working Hours</h2>
+                </div>
+                <div class="paragraph">
+                    <p>Due to our international nature, <br>we fully support and practice <br>remote work.</p>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="content">
+                    <ion-icon name="diamond-outline"></ion-icon>
+                  <h2>Health Checkups</h2>
+                </div>
+                <div class="paragraph">
+                    <p>Due to our international nature, <br>we fully support and practice <br>remote work.</p>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="content">
+                    <ion-icon name="git-compare-outline"></ion-icon>
+                  <h2>Team working</h2>
+                </div>
+                <div class="paragraph">
+                    <p>Due to our international nature, <br>we fully support and practice <br>remote work.</p>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="content">
+                    <ion-icon name="medal-outline"></ion-icon>
+                  <h2>Awards</h2>
+                </div>
+                <div class="paragraph">
+                    <p>Due to our international nature, <br>we fully support and practice <br>remote work.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <script>
+        // Wait for the page to load
+        document.addEventListener("DOMContentLoaded", function() {
+          // Get the content element
+          var content = document.getElementById("content");
+    
+          // Trigger the animation after a short delay (you can adjust this)
+          setTimeout(function() {
+            // Add the "show" class to trigger the animation
+            content.classList.add("show");
+          }, 500); // 500 milliseconds delay (adjust as needed)
+        });
+    </script>
+
+
+    <div class="application">
+        <h1>Join Us</h1>
+        <p>LegalVision is a team of lawyers, technologists, marketing mavericks, solutions consultants and operations gurus who are drawn together by a shared vision of changing the delivery of legal services.</p>
+        <div class="applybtn">
+            <button class="overlay-button">View Available Opportunities</button> or  <button class="overlay-button">Email Us Your Resume</button>
+        </div>
+    </div>
+</section>
+
+
+<!--------------------------------------------------------------------------------------footer---------------------------------------------------------------------------------------------------->
         <section class="footer">
             <div class="footerlogo">
                 <img src="https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/ImmigrationPRO/logo%20transparent.png" alt="ImmigrationPRO logo">
@@ -289,5 +449,8 @@
         
             </div>
         </section>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
             </body>
         </html>

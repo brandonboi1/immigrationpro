@@ -2626,6 +2626,7 @@ div{
     background-position: center;
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
 }
 
 .headerabout nav{
@@ -2904,3 +2905,553 @@ div{
     margin: 3% 0;
 }
 
+
+/*-------------------------------------------------------------------------------------------------PATHWAYS------------------------------------------------------------------------------------------*/
+.headerpathways{
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,255,0.5), rgba(0,0,255,0.3)),url(https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/00011aa9discover/pathwaysbkg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.introgallery{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.introsubcol{
+    flex-basis: 33.3%;
+    align-items: space-between;
+    gap: 20px;
+}
+
+.landscape,
+.col2img,
+.col3img{
+    width: 100%;
+}
+
+.landscape{
+    margin-top: 4px;
+}
+
+.pathwaysrow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pathwayscol{
+    flex-basis: 50%;
+}
+
+.pathh1{
+    font-size:  8rem;
+    color: #004aad;
+}
+
+.pathp{
+    width: 80%;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
+.pathwayscol2{
+    display:  flex;
+    flex-direction: column;
+    align-items:  center;
+}
+
+/*-----------------------------------------------------------------------------------------------all pathways-------------------------------------------------------------------------------------------------*/
+.rightgallery{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.rightsubcol{
+    flex-basis: 50%;
+    align-items: space-between;
+    gap: 20px;
+}
+
+.rightrow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rightart{
+    flex-basis: 35%;
+}
+
+.rightwords{
+    flex-basis: 65%;
+    max-width:  100%;
+    width: 80%
+}
+
+.rightwords{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightwords h1{
+    color: #004aad;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.rightwords p{
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.rightwords h1, .rightwords p{
+    width:  80%;
+}
+
+.head{
+    font-size: 3rem;
+    color: #004aad;
+    margin-top:  10px;
+    margin-left: 20px;
+}
+
+.head1{
+    margin-left: 20px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------CONTACT US --------------------------------------------------------------------------------------------------------------------*/
+.headercontact{
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,255,0.5), rgba(0,0,255,0.3)),url(https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/00011aa9contacts/contactsbkg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------map--------------------------------------------------------------------------------------------------------------------------*/
+.maprow{
+    display: flex;
+    align-items: flex-end;
+}
+
+.mapp {
+    flex-basis: 60%;
+    padding: 2%;
+}
+
+.mapp iframe{
+    width: 100%;
+}
+
+.mappp{
+    flex-basis: 40%;
+    padding: 2%;
+    margin-top: 3%;
+}
+
+.mappp img{
+    width: 6%;
+}
+
+.mappp a{
+    color: #6b6d62;
+    text-decoration: none;
+}
+
+.mappp i{
+    margin-right: 1%;
+    color: #3498db;
+}
+
+.mappp p{
+    color: #6b6d62;
+}
+
+.mappp .notice p{
+    margin-top: 3%;
+    width: 90%;
+}
+
+.mappp h1{
+    color: #004aad;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------contact form-------------------------------------------------------------------------------------------------------------------------------*/
+.contactform{
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/00011aa9contacts/contactformbkg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.contactform .form-container{
+    width: 45%;
+    margin-left: 5%;
+    flex-basis: auto;
+}
+
+.contactform .form-container h2{
+    color: #004aad;
+}
+
+/*-----------------------------------------------------------------------------careers---------------------------------------------------------------------------------*/
+.headercareers{
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,255,0.5), rgba(0,0,255,0.3)),url(https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/00011aa9careers/careersbkg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+/*--------------------------------------------------------------------------------------------------------blog------------------------------------------------------------------*/
+.headerblog{
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,255,0.5), rgba(0,0,255,0.3)),url(https://cloud-object-storage-cos-standard-hos.s3.eu-de.cloud-object-storage.appdomain.cloud/00011aa9careers/blogbkg.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.headerblog h1{
+    font-size: 15rem;
+}
+
+/*------------------------------------------------------------------------------careers----------------------------------------------------*/
+.container {
+    position: relative;
+    border: 2px solid #004aad;
+    width: fit-content;
+    padding: 2%;
+    transition: height 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    position: relative;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.paragraph {
+    opacity: 0;
+    height: auto;
+    transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(-30px);
+}
+
+.container:hover .content {
+    transform: translateY(-20px);
+}
+
+.container:hover .paragraph {
+    opacity: 1;
+    height: auto;
+    transform: translateY(0px);
+}
+
+.benefitscol{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.jobs h1, .jobs p, .jobs .application .applybtn ,.overlay-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.application{
+    margin: 5% 10%;
+    padding: 2%;
+    width: 80%;
+    max-width: 100%;
+    background-color: #3498db;
+    transition: 1s ease-in-out;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.application:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+.application h1, .workj h1,  .benefits h1{
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #004aad;
+}
+
+.application p, .workj p {
+    max-width: 100%;
+    position: relative;
+    width: 70%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.workj{
+    margin: 3% 10%;
+    width: 80%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.benefits h1{
+    margin-bottom: 5%;
+}
+
+.benefits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content ion-icon{
+    font-size: 2rem;
+    color: #004aad;
+}
+
+.content h2{
+    font-size: 1rem;
+    width: 100%;
+}
+
+.paragraph{
+    font-size: 0.8rem;
+}
+
+.container:hover{
+    border: 2px solid #8fd8ff;
+}
+
+/*-------------------------------------------------------------------------------------------------------------blog-----------------------------------------------------------------------------------------*/
+.blogimg{
+    width: 100%;
+    border-radius:  0.4rem;
+    object-fit: cover;
+}
+
+
+.blogcontainer{
+    background: #c8c3c1;
+    padding: 1%;
+    border-radius: 0.4rem;
+    border: 0.2rem solid #8fd8ff;
+}
+
+.latestblogrow{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding:  2% 5%;
+}
+
+.latestblogcol1{
+    flex-basis: 70% ;
+}
+
+.latestblogcol1 h1{
+    font-size: 2rem;
+    color: #004aad;
+    margin-bottom: 1%;
+    font-style: bolder;
+}
+
+.latestblogcol1 span{
+    color: #3498db;
+}
+
+.blogcategory h2{
+    padding: 0.5% 0;
+    color: #3498db;
+    font-size: 1rem;
+}
+
+.blogtittle h3{
+    font-size: 1.5rem;
+    color: #004aad;
+    padding:  0 0 0.5%;
+}
+
+.blogdes p{
+    padding: 0.5% 0;
+    font-size:  1rem;
+}
+
+.timestamp p{
+    font-size: 0.8rem;
+    color: #6b6d62;
+    padding: 0.5% 0 0;
+}
+
+.timestamp span{
+    color: #6b6d62;
+    font-style: italic;
+}
+
+.colfiltercontainer{
+    background: #c8c3c1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 4%;
+    border-radius: 0.4rem;
+    border: 0.2rem solid #8fd8ff;
+}
+
+.latestblogcol2{
+    flex-basis: 30%;
+    padding-left: 5%;
+    padding-top: 4%;
+
+}
+
+.filteritem{
+    padding: 1% 0;
+    border-bottom:  0.1rem solid #f1f1f0;
+    width: 100%;
+    color: #3498db;
+}
+
+.filtertittle{
+    color: #004aad;
+    padding-bottom: 1%;
+}
+
+.latestcol{
+    display:  flex;
+    flex-direction: row;
+    column-gap:  10px;
+    margin-bottom: 10px;
+}
+
+.latestcol .blogcategory h2{
+    padding: 0.5% 0;
+    color: #3498db;
+    font-size: 0.5rem;
+}
+
+.latestcol .blogtittle h3{
+    font-size: 0.6rem;
+    color: #004aad;
+    padding:  0 0 0.5%;
+    height: 24px;
+    overflow: hidden;
+}
+
+.latestcol .blogdes p{
+    padding: 0.5% 0;
+    font-size:  0.5rem;
+    height: 20px;
+    overflow: hidden;
+}
+
+.latestcol .timestamp p{
+    font-size: 0.4rem;
+    color: #6b6d62;
+    padding: 0.5% 0 0;
+}
+
+.timestamp span{
+    color: #6b6d62;
+    font-style: italic;
+}
+
+.latesth1{
+    padding: 1% 0.5%;
+    color: #004aad;
+}
+
+.latest-blog a{
+    text-decoration: none;
+    color: #004aad;
+}
+
+.latest-blog a:hover{
+    text-decoration: underline;
+}
+
+.morecol a{
+    text-decoration: none;
+    color: #004aad;
+}
+
+.morecol a:hover{
+    text-decoration: underline;
+}
+
+.morecol{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2% 5%;
+    max-width: 100%;
+    width: 90%;
+    column-gap: 2%;
+}
+
+.morecol .blogtittle h3{
+    font-size: 1rem;
+    color: #004aad;
+    padding:  0 0 0.5%;
+}
+
+.morecol .blogdes p{
+    padding: 0.5% 0;
+    font-size:  0.9rem;
+    text-align: justify;
+}
+
+.moreblogs h1{
+    padding: 1% 5%;
+    color: #004aad;
+}
